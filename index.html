@@ -1,0 +1,670 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>flia fa(r)belhaftes Du!</title>
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+
+  <body class="font-sans">
+    <nav
+      class="h-[70px] relative w-full px-6 md:px-16 lg:px-24 xl:px-48 flex items-center justify-between z-20 bg-red-primary text-pink-primary shadow-[0px_4px_25px_0px_#0000000D] transition-all"
+    >
+      <a href="https://prebuiltui.com">
+        <img src="./resources/svgs/Logo_new_minimal_pink.svg" alt="flia Logo" width="80" />
+      </a>
+
+      <ul class="md:flex hidden items-center gap-10">
+        <li><a class="hover:underline transition" href="#">Home</a></li>
+        <li>
+          <a class="hover:underline transition" href="#">Über Uns</a>
+        </li>
+        <li>
+          <a class="hover:underline transition" href="#">Leistungen</a>
+        </li>
+        <li>
+          <a class="hover:underline transition" href="#">Angebote</a>
+        </li>
+      </ul>
+
+      <button
+        type="button"
+        class="bg-pink-primary text-red-primary rounded-full hidden hover:bg-background active:scale-95 transition-all w-40 h-11 md:flex items-center justify-center gap-2"
+      >
+        Kontakt
+        <img src="./resources/svgs/lucide/arrow_button_red.svg" alt="" />
+      </button>
+
+      <button
+        aria-label="menu-btn"
+        type="button"
+        class="menu-btn inline-block md:hidden active:scale-90 transition text-pink-primary"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="#EDDFDD"
+        >
+          <path
+            d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"
+          ></path>
+        </svg>
+      </button>
+
+      <div
+        class="mobile-menu absolute top-[70px] left-0 w-full bg-red-primary p-6 hidden md:hidden"
+      >
+        <ul class="flex flex-col space-y-4 text-lg">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+
+      <button
+        type="button"
+        class="bg-pink-primary text-red-primary rounded-full hover:bg-background active:scale-95 transition-all w-40 h-11 flex items-center justify-center gap-2 mt-4"
+      >
+        Kontakt
+        <img src="./resources/svgs/lucide/arrow_button_red.svg" alt="" />
+      </button>
+      </div>
+    </nav>
+    <header class="bg-pink-primary bg-hero-pattern bg-cover bg-no-repeat bg-right-top px-6 md:px-16 lg:px-24 xl:px-48">
+          <div class="h-[80vh] sm:h-[90vh] flex flex-col justify-center ">
+            <h1 class="font-serif text-5xl sm:text-8xl text-red-primary">
+              fa(r)belhaftes <br />
+              <span class="font-decor text-6xl sm:text-9xl pt-8">-Du!</span>
+            </h1>
+                      <div class="flex flex-col justify-between">
+            <div class="mb-10">
+              <p class="text-red-primary">
+                FLIA steht für mehr als Stil.<br />Für <b>F</b>arbe, die
+                Bedeutung hat.<br />Für <b>L</b>ebendigkeit, die den Stil
+                prägt.<br />Für <b>I</b>ndividualität ohne Kompromisse.<br />Für
+                <b>A</b>uthentizität, die sichtbar bleibt.
+              </p>
+            </div>
+                    <button
+          type="button"
+          class="bg-red-primary text-pink-primary rounded-full hover:bg-[#540D14] active:scale-95 transition-all w-72 h-11 flex items-center justify-center gap-2"
+        >
+          Farbberatung buchen
+          <img src="./resources/svgs/lucide/arrow_button_pink.svg" alt="" />
+        </button>
+          </div>
+          </div>
+        <a href="#" class="absolute bottom-36 md:bottom-8 left-1/2">
+          <img
+            src="./resources/svgs/lucide/arrows_down.svg"
+            alt="Arrow Down"
+            width="40"
+          />
+        </a>
+      </div>
+    </header>
+    <section class="px-6 md:px-16 lg:px-24 xl:px-48 py-24">
+      <div class="flex flex-col items-center justify-center gap-4">
+        <p class="text-center text-red-primary">unsere vision</p>
+        <h2 class="font-serif text-4xl sm:text-5xl text-red-primary text-center">
+          Wir zeigen dir nicht, <span class="font-decor text-6xl sm:text-7xl">was</span> du
+          tragen<br />sollst, sondern
+          <span class="font-decor text-6xl sm:text-7xl">wer du bist</span><br />wenn du
+          <span class="font-decor text-6xl sm:text-7xl">strahlst</span>.
+        </h2>
+        <button
+          type="button"
+          class="bg-red-primary text-pink-primary hover:bg-[#540D14] rounded-full active:scale-95 transition-all w-72 h-11 flex items-center justify-center gap-2"
+        >
+          Farbberatung buchen
+          <img src="./resources/svgs/lucide/arrow_button_pink.svg" alt="" />
+        </button>
+      </div>
+    </section>
+    <section>
+      <div
+        class="flex overflow-hidden gap-5 group bg-red-primary text-pink-primary py-4"
+      >
+        <!-- Content 1: Animated to move left -->
+        <div class="flex gap-5 animate-loop-scroll group-hover:paused">
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">Farbe</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">Lebendigkeit</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest"
+            >Individualität</span
+          >
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">Authentizität</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+        </div>
+
+        <!-- Content 2: Duplicate of Content 1 for seamless loop -->
+        <div
+          class="flex gap-5 animate-loop-scroll group-hover:paused"
+          aria-hidden="true"
+        >
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">Farbe</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">Lebendigkeit</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest"
+            >Individualität</span
+          >
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">Authentizität</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-pink-primary px-6 md:px-16 lg:px-24 xl:px-48 py-24 relative"
+    >
+      <div class="flex flex-col gap-4">
+        <p class="text-red-primary">wer wir sind</p>
+        <h2 class="font-serif text-4xl sm:text-5xl text-red-primary max-w-[550px]">
+          Hi, wir sind <span class="font-decor text-6xl sm:text-7xl">Sofia</span> &
+          <span class="font-decor text-6xl sm:text-7xl">Elli,</span> die
+          <span class="font-decor text-6xl sm:text-7xl">Gesichter</span> hinter flia.
+        </h2>
+        <p class="text-red-primary max-w-[500px]">
+          Wir sind beste Freundinnen, Stil-Liebhaberinnen und Gründerinnen mit
+          einer gemeinsamen Mission: Frauen dabei zu unterstützen, ihren eigenen
+          Stil zu finden. Mit einem Mix aus professioneller Farbberatung,
+          modernem Stilverständnis und ganz viel Herz begleiten wir dich auf
+          deinem Weg zu mehr Selbstsicherheit und Ausdruck. Echt. Empowernd.
+          fa(r)belhaft.
+        </p>
+      </div>
+      <div
+        class="flex flex-col sm:grid sm:grid-cols-3 mt-12 md:mt-0 md:flex md:flex-col gap-2 p-2 bg-red-primary w-full md:max-w-[200px] lg:max-w-[300px] md:absolute right-0 md:right-16 lg:right-24 top-24"
+      >
+        <img src="./resources/images/about_1.png" alt="About Image 1" />
+        <img src="./resources/images/about_2.png" alt="About Image 2" />
+        <img src="./resources/images/about_3.png" alt="About Image 3" />
+      </div>
+    </section>
+    <section class="px-6 md:px-16 lg:px-24 xl:px-48 py-24">
+      <div class="flex flex-col gap-4">
+        <p class="text-red-primary">was wir machen</p>
+        <h2 class="font-serif text-4xl sm:text-5xl text-red-primary md:max-w-[550px]">
+          Unsere Expertise für dein
+          <span class="font-decor text-6xl sm:text-7xl">Strahlen</span>.
+        </h2>
+        <table class="max-w-[500px]">
+          <tr class="border-b-[1px] border-pink-primary">
+            <td class="text-pink-primary font-decor text-6xl py-4 pr-10">01</td>
+            <td class="text-red-primary font-serif text-3xl">Farbberatung</td>
+          </tr>
+          <tr class="border-b-[1px] border-pink-primary">
+            <td class="text-pink-primary font-decor text-6xl py-4 pr-10">02</td>
+            <td class="text-red-primary font-serif text-3xl">
+              Persönliche Stilberatung
+            </td>
+          </tr>
+          <tr class="border-b-[1px] border-pink-primary">
+            <td class="text-pink-primary font-decor text-6xl py-4 pr-10">03</td>
+            <td class="text-red-primary font-serif text-3xl">
+              Körperform-Analyse
+            </td>
+          </tr>
+          <tr>
+            <td class="text-pink-primary font-decor text-6xl py-4 pr-10">04</td>
+            <td class="text-red-primary font-serif text-3xl">
+              Personal Shopping
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="bg-pink-primary px-6 md:px-16 lg:px-24 xl:px-48 py-24">
+      <div class="flex flex-col items-center gap-4">
+        <p class="text-red-primary text-center">unsere angebote</p>
+        <h2
+          class="font-serif text-4xl sm:text-5xl text-red-primary max-w-[550px] text-center"
+        >
+          Individuell. Modern. <br />
+          Auf <span class="font-decor text-6xl sm:text-7xl">dich</span> abgestimmt.
+        </h2>
+        <div class="flex flex-col gap-12">
+          <div class="modal-list">
+            <div class="flex w-full max-w-3xl flex-col border-y border-red-primary">
+              <button
+                type="button"
+                data-package="color-crush"
+                class="group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:bg-red-primary hover:text-pink-primary md:p-5"
+              >
+                <span class="w-10 shrink-0 font-decor text-4xl sm:text-5xl leading-none">01</span>
+                <span class="flex-1">
+                  <span class="block font-serif text-2xl md:text-3xl">Dein persönlicher Farbcode</span>
+                  <span class="mt-1 block text-sm md:text-base">Dein Einstieg in die Welt der Farben. Finde die Farben, die dich zum Strahlen bringen.</span>
+                </span>
+                <img
+                  src="./resources/svgs/lucide/arrow_button_red.svg"
+                  alt=""
+                  class="w-8 shrink-0 transition-all duration-200 group-hover:translate-x-1 group-hover:brightness-0 group-hover:invert group-hover:sepia group-hover:saturate-[2.5] group-hover:hue-rotate-[316deg]"
+                />
+              </button>
+              <button
+                type="button"
+                data-package="style-bloom"
+                class="group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:bg-red-primary hover:text-pink-primary md:p-5"
+              >
+                <span class="w-10 shrink-0 font-decor text-4xl sm:text-5xl leading-none">02</span>
+                <span class="flex-1">
+                  <span class="block font-serif text-2xl md:text-3xl">Dein persönlicher Stilcode</span>
+                  <span class="mt-1 block text-sm md:text-base">Finde den Stil, der deine Persönlichkeit unterstreicht und dich jeden Tag selbstbewusst auftreten lässt.</span>
+                </span>
+                <img
+                  src="./resources/svgs/lucide/arrow_button_red.svg"
+                  alt=""
+                  class="w-8 shrink-0 transition-all duration-200 group-hover:translate-x-1 group-hover:brightness-0 group-hover:invert group-hover:sepia group-hover:saturate-[2.5] group-hover:hue-rotate-[316deg]"
+                />
+              </button>
+              <button
+                type="button"
+                data-package="signature-glow"
+                class="group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:bg-red-primary hover:text-pink-primary md:p-5"
+              >
+                <span class="w-10 shrink-0 font-decor text-4xl sm:text-5xl leading-none">03</span>
+                <span class="flex-1">
+                  <span class="block font-serif text-2xl md:text-3xl">Dein persönlicher Signature Look</span>
+                  <span class="mt-1 block text-sm md:text-base">Farbe und Stil perfekt aufeinander abgestimmt - für einen authentischen Auftritt mit Ausstrahlung.</span>
+                </span>
+                <img
+                  src="./resources/svgs/lucide/arrow_button_red.svg"
+                  alt=""
+                  class="w-8 shrink-0 transition-all duration-200 group-hover:translate-x-1 group-hover:brightness-0 group-hover:invert group-hover:sepia group-hover:saturate-[2.5] group-hover:hue-rotate-[316deg]"
+                />
+              </button>
+              <button
+                type="button"
+                data-package="personal-shopping"
+                class="group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:bg-red-primary hover:text-pink-primary md:p-5"
+              >
+                <span class="w-10 shrink-0 font-decor text-4xl sm:text-5xl leading-none">04</span>
+                <span class="flex-1">
+                  <span class="block font-serif text-2xl md:text-3xl">Personal Shopping</span>
+                  <span class="mt-1 block text-sm md:text-base">Gemeinsam finden wir Kleidungsstücke, die perfekt zu deinem Farbtyp, deiner Figur und deinem Stil passen.</span>
+                </span>
+                <img
+                  src="./resources/svgs/lucide/arrow_button_red.svg"
+                  alt=""
+                  class="w-8 shrink-0 transition-all duration-200 group-hover:translate-x-1 group-hover:brightness-0 group-hover:invert group-hover:sepia group-hover:saturate-[2.5] group-hover:hue-rotate-[316deg]"
+                />
+              </button>
+              <button
+                type="button"
+                data-package="closet-edit"
+                class="group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:bg-red-primary hover:text-pink-primary md:p-5"
+              >
+                <span class="w-10 shrink-0 font-decor text-4xl sm:text-5xl leading-none">05</span>
+                <span class="flex-1">
+                  <span class="block font-serif text-2xl md:text-3xl">flia Signature Experience</span>
+                  <span class="mt-1 block text-sm md:text-base">Farbe. Stil. Shopping. Das Rundum-sorglos-Paket für alle, die ihren persönlichen Stil ganzheitlich entdecken und nachhaltig umsetzen möchten.</span>
+                </span>
+                <img
+                  src="./resources/svgs/lucide/arrow_button_red.svg"
+                  alt=""
+                  class="w-8 shrink-0 transition-all duration-200 group-hover:translate-x-1 group-hover:brightness-0 group-hover:invert group-hover:sepia group-hover:saturate-[2.5] group-hover:hue-rotate-[316deg]"
+                />
+              </button>
+              <button
+                type="button"
+                data-package="together"
+                class="group flex items-center gap-5 p-4 text-left text-red-primary transition hover:bg-red-primary hover:text-pink-primary md:p-5"
+              >
+                <span class="w-10 shrink-0 font-decor text-4xl sm:text-5xl leading-none">06</span>
+                <span class="flex-1">
+                  <span class="block font-serif text-2xl md:text-3xl">fa(r)belhaft together</span>
+                  <span class="mt-1 block text-sm md:text-base">Ob Mädlsabend, Geburtstag oder Special Event - wir gestalten ein individuelles Stylingerlebnis voller Farbe, Spaß & Inspiration.</span>
+                </span>
+                <img
+                  src="./resources/svgs/lucide/arrow_button_red.svg"
+                  alt=""
+                  class="w-8 shrink-0 transition-all duration-200 group-hover:translate-x-1 group-hover:brightness-0 group-hover:invert group-hover:sepia group-hover:saturate-[2.5] group-hover:hue-rotate-[316deg]"
+                />
+              </button>
+            </div>
+
+            <dialog
+              class="m-auto w-[calc(100%-2rem)] max-w-2xl bg-pink-primary p-0 text-red-primary backdrop:bg-red-primary/10"
+              data-package-dialog
+            >
+              <div class="relative p-6 md:p-10">
+                <button
+                  type="button"
+                  data-close-dialog
+                  aria-label="Details schließen"
+                  class="absolute right-5 top-4 text-3xl leading-none transition hover:rotate-90"
+                >
+                  &times;
+                </button>
+                <div data-package-panel="color-crush" class="hidden">
+                  <p class="font-decor text-6xl">01</p>
+                  <h3 class="font-serif text-4xl">Dein persönlicher Farbcode</h3>
+                  <p class="mt-5 max-w-xl">Dein Einstieg in die Welt der Farben. Finde die Farben, die dich zum Strahlen bringen.</p>
+                  <p class="mt-5 font-bold">Dauer: ca. 1,5 Stunden</p>
+                  <ul class="mt-5 list-disc space-y-2 pl-5">
+                    <li>Professionelle Bestimmung
+deines Farbtyps</li>
+                    <li>Typgerechtes Tages-Make-Up</li>
+                    <li>Persönlicher Farbkompass: <br> - Farbpass für unterwegs<br>- Mini-Guide mit den wichtigsten Tipps</li>
+                  </ul>
+                  <p class="mt-6 font-decor text-6xl">189 €</p>
+                </div>
+                <div data-package-panel="style-bloom" class="hidden">
+                  <p class="font-decor text-6xl">02</p>
+                  <h3 class="font-serif text-4xl">Dein persönlicher Stilcode</h3>
+                  <p class="mt-5 max-w-xl">Finde den Stil, der deine
+Persönlichkeit unterstreicht und dich jeden Tag selbstbewusst auftreten lässt.</p>
+                  <p class="mt-5 font-bold">Dauer: ca. 2-2,5 Stunden</p>
+                  <ul class="mt-5 list-disc space-y-2 pl-5">
+                    <li>Analyse deiner
+Körperproportionen</li>
+                    <li>Bestimmung deiner Figur- und
+Gesichtsform</li>
+                    <li>Passende Schnitte, Materialien & Muster</li>
+                    <li>Empfehlungen zu Brillen, Schmuck & Accessoires</li>
+                    <li>Dein maßgeschneiderter Farb
+& Stilkompass:<br>- Outfit- und
+Stylingempfehlungen<br>-Persönlicher Stil-Guide inklusive Moodboard</li>
+                  </ul>
+                  <p class="mt-6 font-decor text-6xl">219 €</p>
+                </div>
+                <div data-package-panel="signature-glow" class="hidden">
+                  <p class="font-decor text-6xl">03</p>
+                  <h3 class="font-serif text-4xl">Dein persönlicher Signature Look</h3>
+                  <p class="mt-5 max-w-xl">Farbe und Stil perfekt aufeinander abgestimmt - für einen authentischen Auftritt mit Ausstrahlung.</p>
+                  <p class="mt-5 font-bold">Dauer: ca. 4 Stunden</p>
+                  <ul class="mt-5 list-disc space-y-2 pl-5">
+                    <li>Komplette Farbberatung</li>
+                    <li>Typgerechtes Tages-Make-Up</li>
+                    <li>Individuelle Stilberatung</li>
+                    <li>Dein maßgeschneiderter Farb
+& Stilkompass:<br>- Farb und Stil Guide inklusive Moodboard<br>- Individuelle Outfit- & Stylingempfehlungen<br>- Farbpass</li>
+                  </ul>
+                  <p class="mt-6 font-decor text-6xl">389 €</p>
+                </div>
+                <div data-package-panel="personal-shopping" class="hidden">
+                  <p class="font-decor text-6xl">04</p>
+                  <h3 class="font-serif text-4xl">Personal Shopping</h3>
+                  <p class="mt-5 max-w-xl">Gemeinsam finden wir Kleidungsstücke, die perfekt zu deinem Farbtyp,
+deiner Figur und deinem
+Stil passen.</p>
+                  <p class="mt-5 font-bold">Dauer: ca. 2 Stunden (für jede
+weiter Stunde EUR 79,00)</p>
+                  <ul class="mt-5 list-disc space-y-2 pl-5">
+                    <li>Vorgespräch zu deinen
+Vorstellungen</li>
+                    <li>Persönliche
+Shoppingbegleitung/li>
+                    <li>Auswahl passender Farben, Schnitte und Materialien</li>
+                    <li>Outfitkombinationen für den Alltag oder einem besonderen
+Event</li>
+                    <li>Einkaufstipps für zukünftige
+Käufe</li>
+                  </ul>
+                  <p class="mt-6 font-decor text-6xl">199 €</p>
+                </div>
+                <div data-package-panel="closet-edit" class="hidden">
+                  <p class="font-decor text-6xl">05</p>
+                  <h3 class="font-serif text-4xl">flia Signature Experience</h3>
+                  <p class="mt-5 max-w-xl">Farbe. Stil. Shopping.
+Das Rundum-sorglos-Paket für alle, die ihren persönlichen Stil ganzheitlich entdecken und nachhaltig umsetzen möchten.</p>
+                  <p class="mt-5 font-bold">Dauer: ca. 5,5-6 Stunden</p>
+                  <ul class="mt-5 list-disc space-y-2 pl-5">
+                    <li>Professionelle Farbberatung</li>
+                    <li>Typgerechtes Tages-Make-Up</li>
+                    <li>Individuelle Stilberatung</li>
+                    <li>Persönliche Shoppingbegleitung</li>
+                    <li>Garderobencheck</li>
+                    <li>Individuelle Outfit- & stylingempfehlungen</li>
+                    <li>Tipps für zukünftige Einkäufe</li>
+                    <li>Maßgeschneiderter Farb- &
+Stilkompass:<br>- Stil und Farb Guide inklusive
+Moodboard<br>- Individuelle Outfit- & Stylingempfehlungen<br>- Farbpass</li>
+                  </ul>
+                  <p class="mt-6 font-decor text-6xl">579 €</p>
+                </div>
+                <div data-package-panel="together" class="hidden">
+                  <p class="font-decor text-6xl">06</p>
+                  <h3 class="font-serif text-4xl">fa(r)belhaft together</h3>
+                  <p class="mt-5 max-w-xl">Ob Mädlsabend, Geburtstag oder Special Event - wir gestalten ein individuelles Stylingerlebnis voller Farbe, Spaß & Inspiration.</p>
+                  <p class="mt-5 font-bold">Angebot auf Anfrage (abhängig von der Gruppenröße & Leistung)</p>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+        <!-- <div class="flex gap-6 mt-12">
+          <div
+            class="border-[1px] border-red-primary px-4 py-6 flex flex-col gap-4 w-full justify-between relative"
+          >
+            <h3 class="text-red-primary font-serif text-3xl">"Color Crush"</h3>
+            <p class="text-red-primary">
+              Dein Einstieg in die Welt der Farben. Finde die Farben, die dich
+              sofort selbstbewusster wirken lassen. <br /><br />
+              Dauer: ca. 60 Minuten
+            </p>
+            <ul class="text-red-primary list-disc list-inside">
+              <li>Persönliche Farbberatung</li>
+              <li>Bestimmung deines Farbtyps</li>
+              <li>Individuelle Farbpalette (digital)</li>
+              <li>Styling-Tipps für Farben im Alltag</li>
+            </ul>
+            <p class="text-red-primary font-decor text-6xl">149 €</p>
+            <p
+              class="text-red-primary font-decor text-6xl sm:text-7xl absolute -top-8 -left-6"
+            >
+              01
+            </p>
+          </div>
+          <div
+            class="border-[1px] border-red-primary px-4 py-6 flex flex-col gap-4 w-full justify-between relative"
+          >
+            <h3 class="text-red-primary font-serif text-3xl">“Style Bloom”</h3>
+            <p class="text-red-primary">
+              Wir bringen Farbe und Stil zusammen – für Looks, die wirklich zu
+              dir passen. <br /><br />
+              Dauer: ca. 90 Minuten
+            </p>
+            <ul class="text-red-primary list-disc list-inside">
+              <li>Persönliche Farbberatung</li>
+              <li>Persönliche Stilberatung</li>
+              <li>Körperform-Analyse</li>
+              <li>Outfit- & Kombinationsideen</li>
+              <li>Digitale Farb- & Stilübersicht</li>
+            </ul>
+            <p class="text-red-primary font-decor text-6xl">249 €</p>
+            <p
+              class="text-red-primary font-decor text-6xl sm:text-7xl absolute -top-8 -left-6"
+            >
+              02
+            </p>
+          </div>
+          <div
+            class="border-[1px] border-red-primary px-4 py-6 flex flex-col gap-4 w-full justify-between relative"
+          >
+            <h3 class="text-red-primary font-serif text-3xl">
+              “Signature Glow”
+            </h3>
+            <p class="text-red-primary">
+              Dein kompletter Style-Glow-up. Für alle, die ihren Look neu
+              definieren und langfristig Klarheit wollen. <br /><br />
+              Dauer: ca. 2-3 Stunden
+            </p>
+            <ul class="text-red-primary list-disc list-inside">
+              <li>Umfassende Farb- & Stilberatung</li>
+              <li>Körperform-Analyse</li>
+              <li>Kleiderschrank-Check</li>
+              <li>Individuelle Outfit-Kombinationen</li>
+              <li>Persönlicher Style Guide (PDF)</li>
+            </ul>
+            <p class="text-red-primary font-decor text-6xl">399 €</p>
+            <p
+              class="text-red-primary font-decor text-6xl sm:text-7xl absolute -top-8 -left-6"
+            >
+              03
+            </p>
+          </div>
+        </div>
+        
+        <div class="flex flex-col gap-2 mt-12 max-w-[600px]">
+          <h3 class="text-red-primary font-serif text-3xl text-center">
+            „fa(r)belhaft together“
+          </h3>
+          <p class="text-red-primary text-center">
+            Ob Mädelsabend, Geburtstag oder Special Event – wir gestalten ein
+            individuelles Styling-Erlebnis voller Farbe, Spaß & Inspiration.
+          </p>
+          <p class="text-red-primary text-center">
+            ab <span class="text-red-primary font-decor text-6xl">79€</span> pro
+            Person<br />(abhängig von Gruppengröße & Umfang)
+          </p>
+        </div> -->
+      </div>
+    </section>
+    <section class="px-6 md:px-16 lg:px-24 xl:px-48 py-24">
+      <div class="flex flex-col sm:flex-row gap-6">
+        <div class="flex flex-col gap-4 w-[60%]">
+          <p class="text-red-primary">kontaktiere uns</p>
+          <h2 class="font-serif text-4xl sm:text-5xl text-red-primary max-w-[550px]">
+            Let’s talk <span class="font-decor text-6xl sm:text-7xl">style</span>
+          </h2>
+          <p class="text-red-primary max-w-[500px]">
+            Du hast Fragen oder willst dein Style-Paket buchen? Schreib uns! Wir
+            freuen uns darauf, dich kennenzulernen.
+          </p>
+        </div>
+        <div class="flex flex-col w-[40%] gap-6 text-red-primary">
+          <div class="flex flex-col md:flex-row gap-4 w-full justify-between">
+            <div>
+              <p>E-Mail Adresse</p>
+              <p>style@flia.at</p>
+            </div>
+            <div>
+              <p>Telefonnummer</p>
+              <p>+43 6364 90674</p>
+            </div>
+          </div>
+          <div>
+            <p>Folge uns auf Instagram</p>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="flex overflow-hidden gap-5 group bg-red-primary text-pink-primary py-4"
+      >
+        <!-- Content 1: Animated to move left -->
+        <div class="flex gap-5 animate-loop-scroll group-hover:paused">
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">Farbe</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">Lebendigkeit</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest"
+            >Individualität</span
+          >
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">Authentizität</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+        </div>
+
+        <!-- Content 2: Duplicate of Content 1 for seamless loop -->
+        <div
+          class="flex gap-5 animate-loop-scroll group-hover:paused"
+          aria-hidden="true"
+        >
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">Farbe</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">Lebendigkeit</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest"
+            >Individualität</span
+          >
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">Authentizität</span>
+          <span class="font-serif text-4xl sm:text-5xl tracking-widest">-</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 p-2 bg-red-primary w-full">
+        <img
+          src="./resources/images/about_1.png"
+          class="h-auto min-w-0"
+          alt="About Image 1"
+        />
+        <img
+          src="./resources/images/about_2.png"
+          class="h-auto min-w-0"
+          alt="About Image 2"
+        />
+        <img
+          src="./resources/images/about_3.png"
+          class="h-auto min-w-0"
+          alt="About Image 3"
+        />
+        <img
+          src="./resources/images/about_1.png"
+          class="h-auto min-w-0"
+          alt="About Image 3"
+        />
+      </div>
+    </section>
+    <footer
+      class="flex flex-col bg-pink-primary items-center gap-6 w-full py-8 text-red-primary"
+    >
+      <div class="flex flex-wrap items-center justify-center gap-8">
+        <a href="#" class="font-sans font-bold text-red-primary transition-all hover:underline">
+          Home
+        </a>
+        <a href="#" class="font-sans font-bold text-red-primary transition-all hover:underline">
+          Über Uns
+        </a>
+        <a href="#" class="font-sans font-bold text-red-primary transition-all hover:underline">
+          Leistungen
+        </a>
+        <a href="#" class="font-sans font-bold text-red-primary transition-all hover:underline">
+          Angebote
+        </a>
+        <a href="#" class="font-sans font-bold text-red-primary transition-all hover:underline">
+          Kontakt
+        </a>
+      </div>
+      <div>
+        <img
+          src="./resources/svgs/Logo_new_red.svg"
+          alt="flia Logo Full"
+          width="100"
+          height="200"
+        />
+      </div>
+      <div class="flex items-center gap-8">
+        <a href="#" class="font-sans text-red-primary transition-all hover:underline">
+          Impressum
+        </a>
+        <a href="#" class="font-sans text-red-primary transition-all hover:underline">
+          Datenschutz
+        </a>
+      </div>
+      <p class="text-center font-sans">
+        Copyright © 2026 flia. All rights reservered.
+      </p>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
