@@ -1,7 +1,8 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth" lang="de">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>flia fa(r)belhaftes Du!</title>
     <link href="./css/output.css" rel="stylesheet" />
   </head>
@@ -15,15 +16,15 @@
       </a>
 
       <ul class="md:flex hidden items-center gap-10">
-        <li><a class="hover:underline transition" href="#">Home</a></li>
+        <li><a class="hover:underline transition" href="#header">Home</a></li>
         <li>
-          <a class="hover:underline transition" href="#">Über Uns</a>
+          <a class="hover:underline transition" href="#about">Über Uns</a>
         </li>
         <li>
-          <a class="hover:underline transition" href="#">Leistungen</a>
+          <a class="hover:underline transition" href="#services">Leistungen</a>
         </li>
         <li>
-          <a class="hover:underline transition" href="#">Angebote</a>
+          <a class="hover:underline transition" href="#offers">Angebote</a>
         </li>
       </ul>
 
@@ -72,7 +73,7 @@
       </button>
       </div>
     </nav>
-    <header class="bg-pink-primary bg-hero-pattern bg-cover bg-no-repeat bg-right-top px-6 md:px-16 lg:px-24 xl:px-48">
+    <header id="header" class="bg-pink-primary bg-hero-pattern bg-cover bg-no-repeat bg-right-top px-6 md:px-16 lg:px-24 xl:px-48">
           <div class="h-[80vh] sm:h-[90vh] flex flex-col justify-center ">
             <h1 class="font-serif text-5xl sm:text-8xl text-red-primary">
               fa(r)belhaftes <br />
@@ -96,7 +97,7 @@
         </button>
           </div>
           </div>
-        <a href="#" class="absolute bottom-36 md:bottom-8 left-1/2">
+        <a href="#vision" class="absolute bottom-36 md:bottom-8 left-1/2">
           <img
             src="./resources/svgs/lucide/arrows_down.svg"
             alt="Arrow Down"
@@ -105,7 +106,7 @@
         </a>
       </div>
     </header>
-    <section class="px-6 md:px-16 lg:px-24 xl:px-48 py-24">
+    <section id="vision" class="px-6 md:px-16 lg:px-24 xl:px-48 py-24">
       <div class="flex flex-col items-center justify-center gap-4">
         <p class="text-center text-red-primary">unsere vision</p>
         <h2 class="font-serif text-4xl sm:text-5xl text-red-primary text-center">
@@ -123,7 +124,7 @@
         </button>
       </div>
     </section>
-    <section>
+    <section id="about">
       <div
         class="flex overflow-hidden gap-5 group bg-red-primary text-pink-primary py-4"
       >
@@ -186,12 +187,12 @@
       <div
         class="flex flex-col sm:grid sm:grid-cols-3 mt-12 md:mt-0 md:flex md:flex-col gap-2 p-2 bg-red-primary w-full md:max-w-[200px] lg:max-w-[300px] md:absolute right-0 md:right-16 lg:right-24 top-24"
       >
-        <img src="./resources/images/about_1.png" alt="About Image 1" />
-        <img src="./resources/images/about_2.png" alt="About Image 2" />
-        <img src="./resources/images/about_3.png" alt="About Image 3" />
+        <img class="w-full h-full object-cover aspect-square" src="./resources/images/portraits/content_1.jpg" alt="About Image 1" />
+        <img class="w-full h-full object-cover aspect-square" src="./resources/images/portraits/content_2.jpg" alt="About Image 2" />
+        <img class="w-full h-full object-cover aspect-square" src="./resources/images/portraits/content_3.jpg" alt="About Image 3" />
       </div>
     </section>
-    <section class="px-6 md:px-16 lg:px-24 xl:px-48 py-24">
+    <section id="services" class="px-6 md:px-16 lg:px-24 xl:px-48 py-24">
       <div class="flex flex-col gap-4">
         <p class="text-red-primary">was wir machen</p>
         <h2 class="font-serif text-4xl sm:text-5xl text-red-primary md:max-w-[550px]">
@@ -224,7 +225,7 @@
         </table>
       </div>
     </section>
-    <section class="bg-pink-primary px-6 md:px-16 lg:px-24 xl:px-48 py-24">
+    <section id="offers" class="bg-pink-primary px-6 md:px-16 lg:px-24 xl:px-48 py-24">
       <div class="flex flex-col items-center gap-4">
         <p class="text-red-primary text-center">unsere angebote</p>
         <h2
@@ -532,7 +533,7 @@ Moodboard<br>- Individuelle Outfit- & Stylingempfehlungen<br>- Farbpass</li>
         </div> -->
       </div>
     </section>
-    <section class="px-6 md:px-16 lg:px-24 xl:px-48 py-24">
+    <section id="contact" class="px-6 md:px-16 lg:px-24 xl:px-48 py-24">
       <div class="flex flex-col sm:flex-row gap-6">
         <div class="flex flex-col gap-4 w-[60%]">
           <p class="text-red-primary">kontaktiere uns</p>
@@ -604,23 +605,23 @@ Moodboard<br>- Individuelle Outfit- & Stylingempfehlungen<br>- Farbpass</li>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 p-2 bg-red-primary w-full">
         <img
-          src="./resources/images/about_1.png"
-          class="h-auto min-w-0"
+          src="./resources/images/portraits/content_4.jpg"
+          class="min-w-0 w-full h-full object-cover aspect-square"
           alt="About Image 1"
         />
         <img
-          src="./resources/images/about_2.png"
-          class="h-auto min-w-0"
+          src="./resources/images/portraits/content_5.jpg"
+          class="min-w-0 w-full h-full object-cover aspect-square"
           alt="About Image 2"
         />
         <img
-          src="./resources/images/about_3.png"
-          class="h-auto min-w-0"
+          src="./resources/images/portraits/content_6.jpg"
+          class="min-w-0 w-full h-full object-cover aspect-square"
           alt="About Image 3"
         />
         <img
-          src="./resources/images/about_1.png"
-          class="h-auto min-w-0"
+          src="./resources/images/portraits/content_7.jpg"
+          class="min-w-0 w-full h-full object-cover aspect-square"
           alt="About Image 3"
         />
       </div>
@@ -629,19 +630,19 @@ Moodboard<br>- Individuelle Outfit- & Stylingempfehlungen<br>- Farbpass</li>
       class="flex flex-col bg-pink-primary items-center gap-6 w-full py-8 text-red-primary"
     >
       <div class="flex flex-wrap items-center justify-center gap-8">
-        <a href="#" class="font-sans font-bold text-red-primary transition-all hover:underline">
+        <a href="#header" class="font-sans font-bold text-red-primary transition-all hover:underline">
           Home
         </a>
-        <a href="#" class="font-sans font-bold text-red-primary transition-all hover:underline">
+        <a href="#about" class="font-sans font-bold text-red-primary transition-all hover:underline">
           Über Uns
         </a>
-        <a href="#" class="font-sans font-bold text-red-primary transition-all hover:underline">
+        <a href="#services" class="font-sans font-bold text-red-primary transition-all hover:underline">
           Leistungen
         </a>
-        <a href="#" class="font-sans font-bold text-red-primary transition-all hover:underline">
+        <a href="#offers" class="font-sans font-bold text-red-primary transition-all hover:underline">
           Angebote
         </a>
-        <a href="#" class="font-sans font-bold text-red-primary transition-all hover:underline">
+        <a href="#contact" class="font-sans font-bold text-red-primary transition-all hover:underline">
           Kontakt
         </a>
       </div>
