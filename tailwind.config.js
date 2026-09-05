@@ -1,6 +1,8 @@
 module.exports = {
   content: [
     "./index.html",
+    "./impressum.html",
+    "./datenschutz.html",
     "./js/**/*.js"
   ],
   theme: {
