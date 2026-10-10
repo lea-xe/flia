@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>flia fa(r)belhaftes Du!</title>
+    <script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.fliaMotion)document.documentElement.classList.remove("js")},3000)</script>
     <link href="./css/output.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -21,15 +22,15 @@
       </a>
 
       <ul class="md:flex hidden items-center gap-10 text-xs uppercase tracking-label">
-        <li><a class="hover:underline underline-offset-8 transition" href="#header">Home</a></li>
+        <li><a class="nav-link" href="#header">Home</a></li>
         <li>
-          <a class="hover:underline underline-offset-8 transition" href="#about">Über Uns</a>
+          <a class="nav-link" href="#about">Über Uns</a>
         </li>
         <li>
-          <a class="hover:underline underline-offset-8 transition" href="#services">Leistungen</a>
+          <a class="nav-link" href="#services">Leistungen</a>
         </li>
         <li>
-          <a class="hover:underline underline-offset-8 transition" href="#offers">Angebote</a>
+          <a class="nav-link" href="#offers">Angebote</a>
         </li>
       </ul>
 
@@ -38,7 +39,7 @@
         class="btn-blush hidden md:inline-flex !h-11"
       >
         Kontakt
-        <img src="./resources/svgs/lucide/arrow_button_red.svg" alt="" />
+        <svg class="btn-arrow w-10 h-5 shrink-0" viewBox="0 0 47 24" fill="none" aria-hidden="true"><path d="M35.2498 16L43.0832 12L35.2498 8M43.0832 12H3.9165" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
 
       <button
@@ -63,15 +64,15 @@
         class="mobile-menu absolute top-[70px] left-0 w-full bg-red-primary p-6 hidden md:hidden"
       >
         <ul class="flex flex-col space-y-5 text-sm uppercase tracking-label">
-        <li><a class="hover:underline underline-offset-8 transition" href="#header">Home</a></li>
+        <li><a class="nav-link" href="#header">Home</a></li>
         <li>
-          <a class="hover:underline underline-offset-8 transition" href="#about">Über Uns</a>
+          <a class="nav-link" href="#about">Über Uns</a>
         </li>
         <li>
-          <a class="hover:underline underline-offset-8 transition" href="#services">Leistungen</a>
+          <a class="nav-link" href="#services">Leistungen</a>
         </li>
         <li>
-          <a class="hover:underline underline-offset-8 transition" href="#offers">Angebote</a>
+          <a class="nav-link" href="#offers">Angebote</a>
         </li>
         </ul>
 
@@ -80,18 +81,18 @@
         class="btn-blush !h-11 mt-6"
       >
         Kontakt
-        <img src="./resources/svgs/lucide/arrow_button_red.svg" alt="" />
+        <svg class="btn-arrow w-10 h-5 shrink-0" viewBox="0 0 47 24" fill="none" aria-hidden="true"><path d="M35.2498 16L43.0832 12L35.2498 8M43.0832 12H3.9165" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       </div>
     </nav>
-    <header id="header" class="bg-pink-primary bg-hero-pattern bg-cover bg-no-repeat bg-right-top px-6 md:px-16 lg:px-24 xl:px-48">
+    <header id="header" data-parallax-bg class="bg-pink-primary bg-hero-pattern bg-cover bg-no-repeat bg-right-top px-6 md:px-16 lg:px-24 xl:px-48">
           <div class="h-[80vh] sm:h-[90vh] flex flex-col justify-center ">
             <h1 class="font-serif text-5xl sm:text-8xl text-red-primary">
-              fa(r)belhaftes <br />
-              <span class="font-decor">Du!</span>
+              <span class="hero-line"><span>fa(r)belhaftes</span></span>
+              <span class="hero-line"><span class="font-decor">Du!</span><svg class="hero-sparkle" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg></span>
             </h1>
                       <div class="flex flex-col justify-between">
-            <div class="mb-10 mt-8">
+            <div class="mb-10 mt-8 hero-in" style="--d:650ms">
               <p class="text-red-primary leading-relaxed">
                 FLIA steht für mehr als Stil.<br />Für <b>F</b>arbe, die
                 Bedeutung hat.<br />Für <b>L</b>ebendigkeit, die den Stil
@@ -101,26 +102,27 @@
             </div>
                     <button
           type="button"
-          class="btn-wine self-start"
+          class="btn-wine self-start hero-in" style="--d:800ms"
         >
           Farbberatung buchen
-          <img src="./resources/svgs/lucide/arrow_button_pink.svg" alt="" />
+          <svg class="btn-arrow w-10 h-5 shrink-0" viewBox="0 0 47 24" fill="none" aria-hidden="true"><path d="M35.2498 16L43.0832 12L35.2498 8M43.0832 12H3.9165" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
           </div>
           </div>
-        <a href="#vision" class="absolute bottom-36 md:bottom-8 left-1/2">
+        <a href="#vision" class="absolute bottom-36 md:bottom-8 left-1/2 hero-in" style="--d:1200ms" aria-label="Weiter nach unten">
           <img
             src="./resources/svgs/lucide/arrows_down.svg"
-            alt="Arrow Down"
+            alt=""
             width="40"
+            class="animate-float"
           />
         </a>
       </div>
     </header>
     <section id="vision" class="px-6 md:px-16 lg:px-24 xl:px-48 py-24">
       <div class="flex flex-col items-center justify-center gap-4">
-        <p class="label text-center">unsere vision</p>
-        <h2 class="font-serif text-4xl sm:text-5xl text-red-primary text-center">
+        <p data-reveal class="label text-center">unsere vision</p>
+        <h2 data-reveal class="font-serif text-4xl sm:text-5xl text-red-primary text-center">
           Wir zeigen dir nicht, <span class="font-decor">was</span> du
           tragen<br />sollst, sondern
           <span class="font-decor">wer du bist</span><br />wenn du
@@ -128,10 +130,10 @@
         </h2>
         <button
           type="button"
-          class="btn-wine mt-6"
+          data-reveal class="btn-wine mt-6"
         >
           Farbberatung buchen
-          <img src="./resources/svgs/lucide/arrow_button_pink.svg" alt="" />
+          <svg class="btn-arrow w-10 h-5 shrink-0" viewBox="0 0 47 24" fill="none" aria-hidden="true"><path d="M35.2498 16L43.0832 12L35.2498 8M43.0832 12H3.9165" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
       </div>
     </section>
@@ -142,17 +144,17 @@
         <!-- Content 1: Animated to move left -->
         <div class="flex gap-5 animate-loop-scroll group-hover:paused">
           <span class="font-serif text-4xl sm:text-5xl tracking-wide">Farbe</span>
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
           <span class="font-serif text-4xl sm:text-5xl tracking-wide">Lebendigkeit</span>
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
 
           <span class="font-serif text-4xl sm:text-5xl tracking-wide"
             >Individualität</span
           >
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
 
           <span class="font-serif text-4xl sm:text-5xl tracking-wide">Authentizität</span>
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
         </div>
 
         <!-- Content 2: Duplicate of Content 1 for seamless loop -->
@@ -161,18 +163,18 @@
           aria-hidden="true"
         >
           <span class="font-serif text-4xl sm:text-5xl tracking-wide">Farbe</span>
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
 
           <span class="font-serif text-4xl sm:text-5xl tracking-wide">Lebendigkeit</span>
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
 
           <span class="font-serif text-4xl sm:text-5xl tracking-wide"
             >Individualität</span
           >
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
 
           <span class="font-serif text-4xl sm:text-5xl tracking-wide">Authentizität</span>
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
         </div>
       </div>
     </section>
@@ -180,13 +182,13 @@
       class="bg-pink-primary px-6 md:px-16 lg:px-24 xl:px-48 py-24 relative"
     >
       <div class="flex flex-col gap-4">
-        <p class="label">wer wir sind</p>
-        <h2 class="font-serif text-4xl sm:text-5xl text-red-primary max-w-[550px]">
+        <p data-reveal class="label">wer wir sind</p>
+        <h2 data-reveal class="font-serif text-4xl sm:text-5xl text-red-primary max-w-[550px]">
           Hi, wir sind <span class="font-decor">Sofia</span> &
           <span class="font-decor">Elli,</span> die
           <span class="font-decor">Gesichter</span> hinter flia.
         </h2>
-        <p class="text-red-primary max-w-[500px]">
+        <p data-reveal class="text-red-primary max-w-[500px]">
           Wir sind beste Freundinnen, Stil-Liebhaberinnen und Gründerinnen mit
           einer gemeinsamen Mission: Frauen dabei zu unterstützen, ihren eigenen
           Stil zu finden. Mit einem Mix aus professioneller Farbberatung,
@@ -198,36 +200,36 @@
       <div
         class="flex flex-col sm:grid sm:grid-cols-3 mt-12 md:mt-0 md:flex md:flex-col gap-2 p-2 bg-red-primary w-full md:max-w-[200px] lg:max-w-[300px] md:absolute right-0 md:right-16 lg:right-24 top-24"
       >
-        <img class="w-full h-full object-cover aspect-square" src="./resources/images/portraits/content_1.jpg" alt="About Image 1" />
-        <img class="w-full h-full object-cover aspect-square" src="./resources/images/portraits/content_2.jpg" alt="About Image 2" />
-        <img class="w-full h-full object-cover aspect-square" src="./resources/images/portraits/content_3.jpg" alt="About Image 3" />
+        <div data-reveal="img" class="photo aspect-square"><img class="w-full h-full object-cover" src="./resources/images/portraits/content_1.jpg" alt="About Image 1" /></div>
+        <div data-reveal="img" class="photo aspect-square"><img class="w-full h-full object-cover" src="./resources/images/portraits/content_2.jpg" alt="About Image 2" /></div>
+        <div data-reveal="img" class="photo aspect-square"><img class="w-full h-full object-cover" src="./resources/images/portraits/content_3.jpg" alt="About Image 3" /></div>
       </div>
     </section>
     <section id="services" class="px-6 md:px-16 lg:px-24 xl:px-48 py-24">
       <div class="flex flex-col gap-4">
-        <p class="label">was wir machen</p>
-        <h2 class="font-serif text-4xl sm:text-5xl text-red-primary md:max-w-[550px]">
+        <p data-reveal class="label">was wir machen</p>
+        <h2 data-reveal class="font-serif text-4xl sm:text-5xl text-red-primary md:max-w-[550px]">
           Unsere Expertise für dein
           <span class="font-decor">Strahlen</span>.
         </h2>
         <table class="max-w-[500px]">
-          <tr class="border-b-[1px] border-rose-primary">
+          <tr data-reveal class="service-row border-b-[1px] border-rose-primary">
             <td class="text-rose-primary font-decor text-5xl py-4 pr-10">01</td>
             <td class="text-red-primary font-serif text-3xl">Farbberatung</td>
           </tr>
-          <tr class="border-b-[1px] border-rose-primary">
+          <tr data-reveal class="service-row border-b-[1px] border-rose-primary">
             <td class="text-rose-primary font-decor text-5xl py-4 pr-10">02</td>
             <td class="text-red-primary font-serif text-3xl">
               Persönliche Stilberatung
             </td>
           </tr>
-          <tr class="border-b-[1px] border-rose-primary">
+          <tr data-reveal class="service-row border-b-[1px] border-rose-primary">
             <td class="text-rose-primary font-decor text-5xl py-4 pr-10">03</td>
             <td class="text-red-primary font-serif text-3xl">
               Körperform-Analyse
             </td>
           </tr>
-          <tr>
+          <tr data-reveal class="service-row">
             <td class="text-rose-primary font-decor text-5xl py-4 pr-10">04</td>
             <td class="text-red-primary font-serif text-3xl">
               Personal Shopping
@@ -238,8 +240,8 @@
     </section>
     <section id="offers" class="bg-pink-primary px-6 md:px-16 lg:px-24 xl:px-48 py-24">
       <div class="flex flex-col items-center gap-4">
-        <p class="label text-center">unsere angebote</p>
-        <h2
+        <p data-reveal class="label text-center">unsere angebote</p>
+        <h2 data-reveal
           class="font-serif text-4xl sm:text-5xl text-red-primary max-w-[550px] text-center"
         >
           Individuell. Modern. <br />
@@ -251,7 +253,7 @@
               <button
                 type="button"
                 data-package="color-crush"
-                class="group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:bg-red-primary hover:text-pink-primary md:p-5"
+                data-reveal class="sweep group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:text-pink-primary md:p-5"
               >
                 <span class="w-10 shrink-0 font-decor text-3xl sm:text-4xl leading-none">01</span>
                 <span class="flex-1">
@@ -263,7 +265,7 @@
               <button
                 type="button"
                 data-package="style-bloom"
-                class="group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:bg-red-primary hover:text-pink-primary md:p-5"
+                data-reveal class="sweep group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:text-pink-primary md:p-5"
               >
                 <span class="w-10 shrink-0 font-decor text-3xl sm:text-4xl leading-none">02</span>
                 <span class="flex-1">
@@ -275,7 +277,7 @@
               <button
                 type="button"
                 data-package="signature-glow"
-                class="group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:bg-red-primary hover:text-pink-primary md:p-5"
+                data-reveal class="sweep group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:text-pink-primary md:p-5"
               >
                 <span class="w-10 shrink-0 font-decor text-3xl sm:text-4xl leading-none">03</span>
                 <span class="flex-1">
@@ -287,7 +289,7 @@
               <button
                 type="button"
                 data-package="personal-shopping"
-                class="group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:bg-red-primary hover:text-pink-primary md:p-5"
+                data-reveal class="sweep group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:text-pink-primary md:p-5"
               >
                 <span class="w-10 shrink-0 font-decor text-3xl sm:text-4xl leading-none">04</span>
                 <span class="flex-1">
@@ -299,7 +301,7 @@
               <button
                 type="button"
                 data-package="closet-edit"
-                class="group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:bg-red-primary hover:text-pink-primary md:p-5"
+                data-reveal class="sweep group flex items-center gap-5 border-b border-red-primary p-4 text-left text-red-primary transition hover:text-pink-primary md:p-5"
               >
                 <span class="w-10 shrink-0 font-decor text-3xl sm:text-4xl leading-none">05</span>
                 <span class="flex-1">
@@ -311,7 +313,7 @@
               <button
                 type="button"
                 data-package="together"
-                class="group flex items-center gap-5 p-4 text-left text-red-primary transition hover:bg-red-primary hover:text-pink-primary md:p-5"
+                data-reveal class="sweep group flex items-center gap-5 p-4 text-left text-red-primary transition hover:text-pink-primary md:p-5"
               >
                 <span class="w-10 shrink-0 font-decor text-3xl sm:text-4xl leading-none">06</span>
                 <span class="flex-1">
@@ -523,22 +525,23 @@ Moodboard<br>- Individuelle Outfit- & Stylingempfehlungen<br>- Farbpass</li>
     <section id="contact" class="relative overflow-hidden px-6 md:px-16 lg:px-24 xl:px-48 py-24 sm:py-32">
       <img
         src="./resources/svgs/flia_wordmark_rose.svg"
+        data-parallax="0.12"
         alt=""
         aria-hidden="true"
         class="pointer-events-none select-none absolute -bottom-10 -right-16 sm:-bottom-28 sm:-right-10 w-[420px] sm:w-[640px] max-w-none opacity-40"
       />
       <div class="relative flex flex-col sm:flex-row gap-10 sm:gap-6">
         <div class="flex flex-col gap-4 sm:w-[60%]">
-          <p class="label">kontaktiere uns</p>
-          <h2 class="font-serif text-4xl sm:text-5xl text-red-primary max-w-[550px]">
+          <p data-reveal class="label">kontaktiere uns</p>
+          <h2 data-reveal class="font-serif text-4xl sm:text-5xl text-red-primary max-w-[550px]">
             Let’s talk <span class="font-decor">style</span>
           </h2>
-          <p class="text-red-primary max-w-[500px]">
+          <p data-reveal class="text-red-primary max-w-[500px]">
             Du hast Fragen oder willst dein Style-Paket buchen? Schreib uns! Wir
             freuen uns darauf, dich kennenzulernen.
           </p>
         </div>
-        <div class="flex flex-col sm:w-[40%] gap-6 text-red-primary">
+        <div data-reveal class="flex flex-col sm:w-[40%] gap-6 text-red-primary">
           <div class="flex flex-col md:flex-row gap-4 w-full justify-between">
             <div>
               <p class="text-xs uppercase tracking-label opacity-60 mb-1">E-Mail Adresse</p>
@@ -563,17 +566,17 @@ Moodboard<br>- Individuelle Outfit- & Stylingempfehlungen<br>- Farbpass</li>
         <!-- Content 1: Animated to move left -->
         <div class="flex gap-5 animate-loop-scroll group-hover:paused">
           <span class="font-serif text-4xl sm:text-5xl tracking-wide">Farbe</span>
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
           <span class="font-serif text-4xl sm:text-5xl tracking-wide">Lebendigkeit</span>
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
 
           <span class="font-serif text-4xl sm:text-5xl tracking-wide"
             >Individualität</span
           >
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
 
           <span class="font-serif text-4xl sm:text-5xl tracking-wide">Authentizität</span>
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
         </div>
 
         <!-- Content 2: Duplicate of Content 1 for seamless loop -->
@@ -582,73 +585,57 @@ Moodboard<br>- Individuelle Outfit- & Stylingempfehlungen<br>- Farbpass</li>
           aria-hidden="true"
         >
           <span class="font-serif text-4xl sm:text-5xl tracking-wide">Farbe</span>
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
 
           <span class="font-serif text-4xl sm:text-5xl tracking-wide">Lebendigkeit</span>
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
 
           <span class="font-serif text-4xl sm:text-5xl tracking-wide"
             >Individualität</span
           >
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
 
           <span class="font-serif text-4xl sm:text-5xl tracking-wide">Authentizität</span>
-          <svg class="w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
+          <svg class="marquee-star w-5 h-5 sm:w-7 sm:h-7 self-center shrink-0 text-rose-primary" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z"/></svg>
         </div>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 p-2 bg-red-primary w-full">
-        <img
-          src="./resources/images/portraits/content_4.jpg"
-          class="min-w-0 w-full h-full object-cover aspect-square"
-          alt="About Image 1"
-        />
-        <img
-          src="./resources/images/portraits/content_5.jpg"
-          class="min-w-0 w-full h-full object-cover aspect-square"
-          alt="About Image 2"
-        />
-        <img
-          src="./resources/images/portraits/content_6.jpg"
-          class="min-w-0 w-full h-full object-cover aspect-square"
-          alt="About Image 3"
-        />
-        <img
-          src="./resources/images/portraits/content_7.jpg"
-          class="min-w-0 w-full h-full object-cover aspect-square"
-          alt="About Image 3"
-        />
+        <div data-reveal="img" class="photo min-w-0 aspect-square"><img src="./resources/images/portraits/content_4.jpg" class="w-full h-full object-cover" alt="About Image 1" /></div>
+        <div data-reveal="img" class="photo min-w-0 aspect-square"><img src="./resources/images/portraits/content_5.jpg" class="w-full h-full object-cover" alt="About Image 2" /></div>
+        <div data-reveal="img" class="photo min-w-0 aspect-square"><img src="./resources/images/portraits/content_6.jpg" class="w-full h-full object-cover" alt="About Image 3" /></div>
+        <div data-reveal="img" class="photo min-w-0 aspect-square"><img src="./resources/images/portraits/content_7.jpg" class="w-full h-full object-cover" alt="About Image 3" /></div>
       </div>
     </section>
     <footer
       class="flex flex-col bg-pink-primary items-center gap-6 w-full py-8 text-red-primary"
     >
       <div class="flex flex-wrap items-center justify-center gap-8">
-        <a href="#header" class="font-sans text-xs uppercase tracking-label text-red-primary transition-all hover:underline">
+        <a href="#header" class="font-sans text-xs uppercase tracking-label text-red-primary nav-link">
           Home
         </a>
-        <a href="#about" class="font-sans text-xs uppercase tracking-label text-red-primary transition-all hover:underline">
+        <a href="#about" class="font-sans text-xs uppercase tracking-label text-red-primary nav-link">
           Über Uns
         </a>
-        <a href="#services" class="font-sans text-xs uppercase tracking-label text-red-primary transition-all hover:underline">
+        <a href="#services" class="font-sans text-xs uppercase tracking-label text-red-primary nav-link">
           Leistungen
         </a>
-        <a href="#offers" class="font-sans text-xs uppercase tracking-label text-red-primary transition-all hover:underline">
+        <a href="#offers" class="font-sans text-xs uppercase tracking-label text-red-primary nav-link">
           Angebote
         </a>
-        <a href="#contact" class="font-sans text-xs uppercase tracking-label text-red-primary transition-all hover:underline">
+        <a href="#contact" class="font-sans text-xs uppercase tracking-label text-red-primary nav-link">
           Kontakt
         </a>
       </div>
-      <div>
+      <div data-reveal>
         <img
           src="./resources/svgs/flia_logo_wine.svg"
           alt="flia Logo" class="w-36 h-auto" />
       </div>
       <div class="flex items-center gap-8">
-        <a href="/impressum.html" class="font-sans text-red-primary transition-all hover:underline">
+        <a href="/impressum.html" class="font-sans text-red-primary nav-link">
           Impressum
         </a>
-        <a href="/datenschutz.html" class="font-sans text-red-primary transition-all hover:underline">
+        <a href="/datenschutz.html" class="font-sans text-red-primary nav-link">
           Datenschutz
         </a>
       </div>
