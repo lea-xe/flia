@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <meta name="theme-color" content="#5A0E2A" />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body class="font-sans bg-pink-primary text-red-primary min-h-screen">
@@ -16,35 +17,35 @@
     >
       <a href="./index.html" aria-label="flia Startseite">
         <img
-          src="./resources/svgs/Logo_new_minimal_pink.svg"
+          src="./resources/svgs/flia_wordmark_blush.svg"
           alt="flia Logo"
-          width="80"
+          class="h-9 w-auto"
         />
       </a>
 
-      <ul class="md:flex hidden items-center gap-10">
+      <ul class="md:flex hidden items-center gap-10 text-xs uppercase tracking-label">
         <li>
-          <a class="hover:underline transition" href="./index.html#header"
+          <a class="hover:underline underline-offset-8 transition" href="./index.html#header"
             >Home</a
           >
         </li>
         <li>
-          <a class="hover:underline transition" href="./index.html#about"
+          <a class="hover:underline underline-offset-8 transition" href="./index.html#about"
             >Über Uns</a
           >
         </li>
         <li>
-          <a class="hover:underline transition" href="./index.html#services"
+          <a class="hover:underline underline-offset-8 transition" href="./index.html#services"
             >Leistungen</a
           >
         </li>
         <li>
-          <a class="hover:underline transition" href="./index.html#offers"
+          <a class="hover:underline underline-offset-8 transition" href="./index.html#offers"
             >Angebote</a
           >
         </li>
         <li>
-          <a class="hover:underline transition" href="./index.html#contact"
+          <a class="hover:underline underline-offset-8 transition" href="./index.html#contact"
             >Kontakt</a
           >
         </li>
@@ -52,7 +53,7 @@
 
       <a
         href="./index.html#contact"
-        class="bg-pink-primary text-red-primary rounded-full hover:bg-background active:scale-95 transition-all w-40 h-11 hidden md:flex items-center justify-center gap-2"
+        class="btn-blush hidden md:inline-flex !h-11"
       >
         Kontakt
         <img src="./resources/svgs/lucide/arrow_button_red.svg" alt="" />
@@ -68,7 +69,7 @@
           width="30"
           height="30"
           viewBox="0 0 30 30"
-          fill="#EDDFDD"
+          fill="#FBE9E7"
         >
           <path
             d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 3 21 z"
@@ -79,36 +80,36 @@
       <div
         class="mobile-menu absolute top-[70px] left-0 w-full bg-red-primary p-6 hidden md:hidden"
       >
-        <ul class="flex flex-col space-y-4 text-lg">
+        <ul class="flex flex-col space-y-5 text-sm uppercase tracking-label">
           <li>
-            <a class="hover:underline transition" href="./index.html#header"
+            <a class="hover:underline underline-offset-8 transition" href="./index.html#header"
               >Home</a
             >
           </li>
           <li>
-            <a class="hover:underline transition" href="./index.html#about"
+            <a class="hover:underline underline-offset-8 transition" href="./index.html#about"
               >Über Uns</a
             >
           </li>
           <li>
-            <a class="hover:underline transition" href="./index.html#services"
+            <a class="hover:underline underline-offset-8 transition" href="./index.html#services"
               >Leistungen</a
             >
           </li>
           <li>
-            <a class="hover:underline transition" href="./index.html#offers"
+            <a class="hover:underline underline-offset-8 transition" href="./index.html#offers"
               >Angebote</a
             >
           </li>
           <li>
-            <a class="hover:underline transition" href="./index.html#contact"
+            <a class="hover:underline underline-offset-8 transition" href="./index.html#contact"
               >Kontakt</a
             >
           </li>
         </ul>
         <a
           href="./index.html#contact"
-          class="bg-pink-primary text-red-primary rounded-full hover:bg-background active:scale-95 transition-all w-40 h-11 flex items-center justify-center gap-2 mt-4"
+          class="btn-blush !h-11 mt-6"
         >
           Kontakt
           <img src="./resources/svgs/lucide/arrow_button_red.svg" alt="" />
@@ -217,36 +218,34 @@
       <div class="flex flex-wrap items-center justify-center gap-8">
         <a
           href="./index.html#header"
-          class="font-sans font-bold transition-all hover:underline"
+          class="font-sans text-xs uppercase tracking-label transition-all hover:underline"
           >Home</a
         >
         <a
           href="./index.html#about"
-          class="font-sans font-bold transition-all hover:underline"
+          class="font-sans text-xs uppercase tracking-label transition-all hover:underline"
           >Über Uns</a
         >
         <a
           href="./index.html#services"
-          class="font-sans font-bold transition-all hover:underline"
+          class="font-sans text-xs uppercase tracking-label transition-all hover:underline"
           >Leistungen</a
         >
         <a
           href="./index.html#offers"
-          class="font-sans font-bold transition-all hover:underline"
+          class="font-sans text-xs uppercase tracking-label transition-all hover:underline"
           >Angebote</a
         >
         <a
           href="./index.html#contact"
-          class="font-sans font-bold transition-all hover:underline"
+          class="font-sans text-xs uppercase tracking-label transition-all hover:underline"
           >Kontakt</a
         >
       </div>
       <div>
         <img
-          src="./resources/svgs/Logo_new_pink.svg"
-          alt="flia Logo"
-          width="100"
-        />
+          src="./resources/svgs/flia_logo_blush.svg"
+          alt="flia Logo" class="w-36 h-auto" />
       </div>
       <div class="flex items-center gap-8">
         <a href="./impressum.html" class="transition-all hover:underline"

@@ -2,41 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Gloock */
+/* Playfair Display – headlines (variable 400–900) */
 @font-face {
-  font-family: "Gloock";
-  src: url("../resources/fonts/Gloock-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Playfair Display";
+  src: url("../resources/fonts/PlayfairDisplay-Variable.woff") format("woff");
+  font-weight: 400 900;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../resources/fonts/PlayfairDisplay-Italic-Variable.woff") format("woff");
+  font-weight: 400 900;
+  font-style: italic;
+  font-display: swap;
 }
 
-/* Space Grotesk */
+/* Jost – body text & labels (variable 100–900) */
 @font-face {
-  font-family: "Space Grotesk";
-  src: url("../resources/fonts/SpaceGrotesk-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: 200;
+  font-family: "Jost";
+  src: url("../resources/fonts/Jost-Variable.woff") format("woff");
+  font-weight: 100 900;
   font-style: normal;
-}
-@font-face {
-  font-family: "Space Grotesk";
-  src: url("../resources/fonts/SpaceGrotesk-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Space Grotesk";
-  src: url("../resources/fonts/SpaceGrotesk-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: 700;
-  font-style: normal;
+  font-display: swap;
 }
 
-/* Italianno */
-@font-face {
-  font-family: "Italianno";
-  src: url("../resources/fonts/Italianno-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+@layer base {
+  body {
+    @apply bg-background text-red-primary;
+  }
+}
+
+@layer components {
+  /* Italic accent words inside headlines (replaces the former script font) */
+  .font-decor {
+    font-style: italic;
+  }
+
+  /* Small spaced-out uppercase label with a hairline above,
+     like "FARBBERATUNG · STILBERATUNG" on the folder */
+  .label {
+    @apply font-sans text-xs sm:text-sm uppercase tracking-label text-red-primary;
+  }
+  .label::before {
+    content: "";
+    @apply block w-12 h-px bg-current opacity-40 mb-4;
+  }
+  .label.text-center::before {
+    @apply mx-auto;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-3 h-12 px-8 font-sans text-xs sm:text-sm uppercase tracking-label transition-all active:scale-95;
+  }
+  .btn-wine {
+    @apply btn bg-red-primary text-pink-primary hover:bg-red-dark;
+  }
+  .btn-blush {
+    @apply btn bg-pink-primary text-red-primary hover:bg-rose-primary;
+  }
 }
