@@ -777,30 +777,6 @@ body {
 
 /* Colour sweep from the left on hover (buttons, offer rows) */
 
-.sweep {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  transition: color 0.45s var(--ease-out);
-}
-
-.sweep::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: var(--sweep, #5A0E2A);
-  transform: scaleX(0);
-  transform-origin: right center;
-  transition: transform 0.55s var(--ease-out);
-}
-
-.sweep:hover::after,
-  .sweep:focus-visible::after {
-  transform: scaleX(1);
-  transform-origin: left center;
-}
-
 .btn-arrow {
   transition: transform 0.45s var(--ease-out);
 }
@@ -820,6 +796,216 @@ body {
 .nav-link:hover,
   .nav-link:focus-visible {
   background-size: 100% 1px;
+}
+
+/* Offers: editorial cards */
+
+.offer-card {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 250 249 / var(--tw-bg-opacity, 1));
+  padding: 2rem;
+  text-align: left;
+  --tw-text-opacity: 1;
+  color: rgb(90 14 42 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1024px) {
+  .offer-card {
+    padding: 2.5rem;
+  }
+}
+
+.offer-card {
+  transition: background-color 0.5s var(--ease-out);
+}
+
+.offer-card:focus-visible {
+  outline-style: solid;
+  outline-width: 1px;
+  outline-offset: 4px;
+  outline-color: #5A0E2A;
+}
+
+[data-package-panel] p.offer-num {
+  margin-top: 2rem;
+  border-top-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(231 201 196 / var(--tw-border-opacity, 1));
+  padding-top: 1.5rem;
+}
+
+.offer-num {
+  font-family: Playfair Display, Georgia, serif;
+  font-size: 3rem;
+  font-style: italic;
+  line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(231 201 196 / var(--tw-text-opacity, 1));
+  transition: color 0.5s var(--ease-out);
+}
+
+.offer-card:hover .offer-num {
+  --tw-text-opacity: 1;
+  color: rgb(90 14 42 / var(--tw-text-opacity, 1));
+}
+
+.offer-title {
+  margin-top: 2.5rem;
+  display: block;
+  font-family: Playfair Display, Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  line-height: 1.375;
+}
+
+@media (min-width: 1024px) {
+  .offer-title {
+    font-size: 1.7rem;
+  }
+}
+
+.offer-title-line {
+  background: linear-gradient(currentColor, currentColor) left 100% / 0 1px no-repeat;
+  padding-bottom: 3px;
+  transition: background-size 0.6s var(--ease-out);
+}
+
+.offer-card:hover .offer-title-line,
+  .offer-card:focus-visible .offer-title-line {
+  background-size: 100% 1px;
+}
+
+.offer-text {
+  margin-top: 1rem;
+  display: block;
+  flex: 1 1 0%;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  line-height: 1.625;
+  opacity: 0.8;
+}
+
+.offer-meta {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(231 201 196 / var(--tw-border-opacity, 1));
+  padding-top: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.offer-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.offer-arrow {
+  transition: transform 0.5s var(--ease-out);
+}
+
+.offer-card:hover .offer-arrow {
+  transform: translateX(6px);
+}
+
+/* Highlighted package */
+
+.offer-card--featured {
+  --tw-bg-opacity: 1;
+  background-color: rgb(90 14 42 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(251 233 231 / var(--tw-text-opacity, 1));
+}
+
+.offer-card--featured .offer-num,
+  .offer-card--featured:hover .offer-num {
+  --tw-text-opacity: 1;
+  color: rgb(231 201 196 / var(--tw-text-opacity, 1));
+}
+
+.offer-card--featured .offer-meta {
+  border-color: rgb(251 233 231 / 0.25);
+}
+
+.offer-card--featured:focus-visible {
+  outline-color: #5A0E2A;
+}
+
+.offer-badge {
+  position: absolute;
+  right: 2rem;
+  top: 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  --tw-text-opacity: 1;
+  color: rgb(231 201 196 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 1024px) {
+  .offer-badge {
+    right: 2.5rem;
+    top: 2.75rem;
+  }
+}
+
+/* Offer details pop-up – matches the cards */
+
+[data-package-panel] > p:first-child {
+  --tw-text-opacity: 1;
+  color: rgb(231 201 196 / var(--tw-text-opacity, 1));
+}
+
+[data-package-panel] p.font-bold {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+[data-package-panel] ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+[data-package-panel] li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+[data-package-panel] li::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0.45em;
+  height: 0.625rem;
+  width: 0.625rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 201 196 / var(--tw-bg-opacity, 1));
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+[data-package-panel] p.text-5xl {
+  margin-top: 2rem;
+  border-top-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(231 201 196 / var(--tw-border-opacity, 1));
+  padding-top: 1.5rem;
 }
 
 /* Services list */
@@ -989,8 +1175,8 @@ dialog[open]::backdrop {
   margin-bottom: 1.25rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-12 {
@@ -1015,10 +1201,6 @@ dialog[open]::backdrop {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.block {
-  display: block;
 }
 
 .inline-block {
@@ -1047,6 +1229,14 @@ dialog[open]::backdrop {
 
 .\!h-11 {
   height: 2.75rem !important;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .h-5 {
@@ -1081,6 +1271,10 @@ dialog[open]::backdrop {
   width: 2.5rem;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
 .w-36 {
   width: 9rem;
 }
@@ -1089,8 +1283,8 @@ dialog[open]::backdrop {
   width: 1.25rem;
 }
 
-.w-7 {
-  width: 1.75rem;
+.w-8 {
+  width: 2rem;
 }
 
 .w-\[420px\] {
@@ -1117,12 +1311,12 @@ dialog[open]::backdrop {
   max-width: 42rem;
 }
 
-.max-w-3xl {
-  max-width: 48rem;
-}
-
 .max-w-4xl {
   max-width: 56rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .max-w-\[500px\] {
@@ -1143,10 +1337,6 @@ dialog[open]::backdrop {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
 }
 
 .shrink-0 {
@@ -1279,15 +1469,6 @@ dialog[open]::backdrop {
   border-width: 1px;
 }
 
-.border-y {
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-}
-
-.border-b {
-  border-bottom-width: 1px;
-}
-
 .border-b-\[1px\] {
   border-bottom-width: 1px;
 }
@@ -1341,10 +1522,6 @@ dialog[open]::backdrop {
   padding: 0.5rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-6 {
   padding: 1.5rem;
 }
@@ -1392,10 +1569,6 @@ dialog[open]::backdrop {
   padding-right: 2.5rem;
 }
 
-.text-left {
-  text-align: left;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1410,11 +1583,6 @@ dialog[open]::backdrop {
 
 .font-serif {
   font-family: Playfair Display, Georgia, serif;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1528,16 +1696,6 @@ dialog[open]::backdrop {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.transition-transform {
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-200 {
-  transition-duration: 200ms;
 }
 
 /* Playfair Display – headlines (variable 400–900) */
@@ -1741,6 +1899,16 @@ dialog[open]::backdrop {
   }
 }
 
+@media (min-width: 640px) {
+  [data-package-panel] p.sm\:text-5xl {
+    margin-top: 2rem;
+    border-top-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(231 201 196 / var(--tw-border-opacity, 1));
+    padding-top: 1.5rem;
+  }
+}
+
 .backdrop\:bg-red-primary\/40::backdrop {
   background-color: rgb(90 14 42 / 0.4);
 }
@@ -1750,11 +1918,6 @@ dialog[open]::backdrop {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:text-pink-primary:hover {
-  --tw-text-opacity: 1;
-  color: rgb(251 233 231 / var(--tw-text-opacity, 1));
-}
-
 .hover\:no-underline:hover {
   text-decoration-line: none;
 }
@@ -1762,11 +1925,6 @@ dialog[open]::backdrop {
 .active\:scale-90:active {
   --tw-scale-x: .9;
   --tw-scale-y: .9;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.group:hover .group-hover\:translate-x-1 {
-  --tw-translate-x: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1805,6 +1963,10 @@ dialog[open]::backdrop {
 
   .sm\:w-\[640px\] {
     width: 640px;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:grid-cols-3 {
@@ -1898,10 +2060,6 @@ dialog[open]::backdrop {
     padding: 2.5rem;
   }
 
-  .md\:p-5 {
-    padding: 1.25rem;
-  }
-
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -1910,16 +2068,6 @@ dialog[open]::backdrop {
   .md\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 
@@ -1930,6 +2078,14 @@ dialog[open]::backdrop {
 
   .lg\:max-w-\[300px\] {
     max-width: 300px;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:gap-5 {
+    gap: 1.25rem;
   }
 
   .lg\:px-24 {

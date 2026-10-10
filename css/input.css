@@ -116,6 +116,89 @@
     background-size: 100% 1px;
   }
 
+  /* Offers: editorial cards */
+  .offer-card {
+    @apply relative flex h-full flex-col bg-background p-8 text-left text-red-primary lg:p-10;
+    transition: background-color 0.5s var(--ease-out);
+  }
+  .offer-card:focus-visible {
+    @apply outline outline-1 outline-offset-4 outline-red-primary;
+  }
+  .offer-num {
+    @apply font-serif text-5xl italic leading-none text-rose-primary;
+    transition: color 0.5s var(--ease-out);
+  }
+  .offer-card:hover .offer-num {
+    @apply text-red-primary;
+  }
+  .offer-title {
+    @apply mt-10 block font-serif text-2xl leading-snug lg:text-[1.7rem];
+  }
+  .offer-title-line {
+    background: linear-gradient(currentColor, currentColor) left 100% / 0 1px no-repeat;
+    padding-bottom: 3px;
+    transition: background-size 0.6s var(--ease-out);
+  }
+  .offer-card:hover .offer-title-line,
+  .offer-card:focus-visible .offer-title-line {
+    background-size: 100% 1px;
+  }
+  .offer-text {
+    @apply mt-4 block flex-1 text-sm leading-relaxed opacity-80;
+  }
+  .offer-meta {
+    @apply mt-10 flex items-center justify-between border-t border-rose-primary pt-5 text-xs uppercase tracking-label;
+  }
+  .offer-more {
+    @apply inline-flex items-center gap-3;
+  }
+  .offer-arrow {
+    transition: transform 0.5s var(--ease-out);
+  }
+  .offer-card:hover .offer-arrow {
+    transform: translateX(6px);
+  }
+  /* Highlighted package */
+  .offer-card--featured {
+    @apply bg-red-primary text-pink-primary;
+  }
+  .offer-card--featured .offer-num,
+  .offer-card--featured:hover .offer-num {
+    @apply text-rose-primary;
+  }
+  .offer-card--featured .offer-meta {
+    @apply border-pink-primary/25;
+  }
+  .offer-card--featured:focus-visible {
+    @apply outline-red-primary;
+  }
+  .offer-badge {
+    @apply absolute right-8 top-9 inline-flex items-center gap-2 text-[0.65rem] uppercase tracking-label text-rose-primary lg:right-10 lg:top-11;
+  }
+
+  /* Offer details pop-up – matches the cards */
+  [data-package-panel] > p:first-child {
+    @apply text-rose-primary;
+  }
+  [data-package-panel] p.font-bold {
+    @apply text-xs font-normal uppercase tracking-label;
+  }
+  [data-package-panel] ul {
+    @apply list-none pl-0;
+  }
+  [data-package-panel] li {
+    @apply relative pl-6;
+  }
+  [data-package-panel] li::before {
+    content: "";
+    @apply absolute left-0 top-[0.45em] h-2.5 w-2.5 bg-rose-primary;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z'/%3E%3C/svg%3E") center / contain no-repeat;
+  }
+  [data-package-panel] p.text-5xl {
+    @apply mt-8 border-t border-rose-primary pt-6;
+  }
+
   /* Services list */
   .service-row td {
     transition: color 0.4s var(--ease-out), transform 0.4s var(--ease-out);
