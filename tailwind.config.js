@@ -42,7 +42,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'hero-pattern': "url('/resources/images/hero_bg.png')",
+        'hero-pattern': "url('/resources/images/hero_bg.webp')",
       },
     },
   },

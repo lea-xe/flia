@@ -1494,7 +1494,7 @@ dialog[open]::backdrop {
 }
 
 .bg-hero-pattern {
-  background-image: url('/resources/images/hero_bg.png');
+  background-image: url('/resources/images/hero_bg.webp');
 }
 
 .bg-cover {
