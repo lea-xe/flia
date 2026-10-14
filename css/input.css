@@ -183,13 +183,16 @@
   [data-package-panel] p.font-bold {
     @apply text-xs font-normal uppercase tracking-label;
   }
-  [data-package-panel] ul {
+  [data-package-panel] ul,
+  .star-list {
     @apply list-none pl-0;
   }
-  [data-package-panel] li {
+  [data-package-panel] li,
+  .star-list li {
     @apply relative pl-6;
   }
-  [data-package-panel] li::before {
+  [data-package-panel] li::before,
+  .star-list li::before {
     content: "";
     @apply absolute left-0 top-[0.45em] h-2.5 w-2.5 bg-rose-primary;
     -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C12.9 6 18 11.1 24 12C18 12.9 12.9 18 12 24C11.1 18 6 12.9 0 12C6 11.1 11.1 6 12 0Z'/%3E%3C/svg%3E") center / contain no-repeat;
@@ -199,6 +202,41 @@
     @apply mt-8 border-t border-rose-primary pt-6;
   }
 
+  /* Extras: vouchers & co. – same card language as the offers */
+  .extra-card {
+    @apply flex h-full flex-col bg-pink-primary p-8 text-red-primary lg:p-10;
+  }
+  .extra-card--featured {
+    @apply bg-red-primary text-pink-primary;
+  }
+  .extra-figure {
+    @apply font-serif text-5xl italic leading-none text-red-primary lg:text-6xl;
+  }
+  .extra-card--featured .extra-figure {
+    @apply text-pink-primary;
+  }
+  .extra-figure-small {
+    @apply font-sans text-xs not-italic uppercase tracking-label align-middle opacity-70;
+  }
+  .extra-card .offer-title {
+    @apply mt-8;
+  }
+  .extra-card .star-list li::before {
+    @apply bg-red-primary/40;
+  }
+  .extra-card--featured .star-list li::before {
+    @apply bg-pink-primary;
+  }
+  .extra-link {
+    @apply mt-10 flex items-center justify-between border-t border-rose-primary pt-5 text-xs uppercase tracking-label;
+  }
+  .extra-card--featured .extra-link {
+    @apply border-pink-primary/25;
+  }
+  .extra-link:hover .offer-arrow,
+  .extra-link:focus-visible .offer-arrow {
+    transform: translateX(6px);
+  }
   /* Services list */
   .service-row td {
     transition: color 0.4s var(--ease-out), transform 0.4s var(--ease-out);

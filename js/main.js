@@ -7,6 +7,13 @@ menuButtons.forEach((btn, index) => {
     });
 });
 
+// Close the mobile menu after tapping one of its links
+mobileMenus.forEach((menu) => {
+    menu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => menu.classList.add("hidden"));
+    });
+});
+
 const packageDialog = document.querySelector("[data-package-dialog]");
 const packagePanels = packageDialog?.querySelectorAll("[data-package-panel]");
 
